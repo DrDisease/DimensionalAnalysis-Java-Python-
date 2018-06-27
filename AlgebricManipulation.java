@@ -15,13 +15,13 @@ public class AlgebricManipulation {
 			double new_value = v1.value * v2.value;
 			Unit res = v1.un.Unit_Mult(v2.un);
 			//res.setName(sc.next)
-			return new Variable(res, new_value);
+			return new Variable(res, new_value);						// May need to set the unit's name. Check the Unit Class
 		}
 		public Variable var_div(Variable v1,Variable v2) {				// Division of this/v1
 			double new_value = v1.value / v2.value;
 			Unit res = v1.un.Unit_Div(v2.un);
 			//res.setName(sc.next)
-			return new Variable(res, new_value);
+			return new Variable(res, new_value);						//May need to set the unit's name. Check the Unit Class
 		}
 		public Variable var_add(Variable v1, Variable v2) {				//Adiition of this+v1
 			if(!(v1.un.getName().equals(v2.getUnit().getName()))) {System.err.println("TYPE_MISMATCH");}
